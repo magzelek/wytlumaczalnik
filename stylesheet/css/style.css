@@ -1,190 +1,868 @@
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);* {
+@import url(https://fonts.googleapis.com/css?family=Miriam+Libre:400,700&subset=latin-ext);* {
   margin: 0;
   padding: 0;
-  font-size: 12px; }
+  font-family: 'Miriam Libre', sans-serif;
+  font-size: 12px;
+  color: #1c202b;
+}
 
-#C1 {
-  background-color: #726258; }
+@media only screen and (min-width : 992px) {
 
-#C2 {
-  background-color: #a57c55; }
+}
 
-#C3 {
-  background-color: #c7b29b; }
+.container-fluid {
+  padding: 0;
+  margin: 0 auto;
+}
 
-#C4 {
-  background-color: #534741; }
+.container {
+  padding: 0;
+  margin: 0 auto;
+}
 
-#C5 {
-  background-color: #252525; }
+[class*="col"] {
+  padding: 0 0 0 0 !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
 
-#container {
+.noMargin {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/* [class*="row"] {
+  margin: 0 0 0 0;
+  margin-left: 0px;
+  margin-right: 0px;
+} */
+
+.screen {
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
+  align-content: space-between;
+  flex-flow:wrap;
+}
 
-.left {
-  width: 100%;
-  height: 100%; }
-
-.right {
-  width: 700px;
-  height: 100vh;
-  border-left: 1px solid lightGray; }
-
-#palette {
-  width: 100%;
-  height: 300px;
+.flexCenter {
   display: flex;
-  flex-direction: row; }
+  align-items: center;
+  justify-content: center;
+}
 
-.paletteColors {
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.marginBottom {
+  margin-bottom: 20px;
+}
+
+.marginBottom2 {
+  margin-bottom: 35px;
+}
+
+.marginBottom3 {
+  margin-bottom: 80px;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+#app {
+  background-color: #ffdc50;
+}
+
+#app1 {
+  background-color: #ff93f9;
+}
+
+#app2 {
+  background-color: #38daff;
+}
+
+#app3 {
+  background-color: #ff864d;
+}
+
+.c1 {
+  background-color: red;
+}
+.c2 {
+  background-color: blue;
+}
+.c3 {
+  background-color: green;
+}
+.c4 {
+  background-color: pink;
+}
+.c5 {
+  background-color: gray;
+}
+.c6 {
+  background-color: beige;
+}
+.c7 {
+  background-color: yellow;
+}
+
+.safeSpace {
+  height: 120px;
+}
+
+.safeSpace2 {
+  height: 30px;
+}
+
+span {
+  font-size: 12px;
+  font-weight: 400;
+  color: black;
+  display: inline-block;
+  text-align: justify;
+  line-height: 20px;
+  padding: 0 15px 0 15px;
+}
+
+.aboutBook p1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: white;
+  display: block;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-bottom: 15px;
+}
+
+.aboutBook span {
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  display: block;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+.collapsing {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
+}
+
+.navbar {
+  margin: 0;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  min-height: 70px;
+  background-color: white;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.navbar-toggle {
+  margin: 10px;
+  padding: 0 0 0 0 !important;
+}
+
+.navbar-toggle .collapsed {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar div {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center; }
-  .paletteColors div {
-    width: 100%;
-    height: 100%; }
-  .paletteColors .tooltip {
-    font-family: system-ui;
-    z-index: 1;
-    width: 60px;
-    height: 14px;
-    background-color: #525252;
-    color: #fff;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 7px;
-    padding: 3px 8px;
-    border-radius: 8px;
-    visibility: hidden; }
-  .paletteColors span {
-    margin-top: 10px;
-    font-family: 'Lora', serif;
-    font-weight: 700;
-    font-size: 16px;
-    color: #c8c8c8; }
-  .paletteColors input {
-    margin: 0 auto;
-    margin-top: 10px;
-    text-align: center;
-    width: 100px; }
+}
 
-#title {
-  width: 100%;
-  height: 170px;
+.navbar div ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  height: 100%;
+}
+
+.navbar div ul li {
+  height: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar div ul li a {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0 auto;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.shrink {
+  min-height: 30px !important;
+}
+
+.arrDown {
+  font-size: 100px;
+  height: 125px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Lora', serif;
-  color: #525252; }
-  #title h1 {
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.4em; }
-  #title span {
-    font-weight: 400;
-    font-size: 20px; }
+}
 
-#results {
-  margin-top: 50px; }
-  #results div {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-bottom: 20px; }
-    #results div span {
-      margin: 7px 0 7px 0;
-      font-family: 'Lora', serif;
-      font-weight: 700;
-      font-size: 16px;
-      letter-spacing: 3px;
-      color: #c8c8c8; }
-    #results div input {
-      margin: 0 auto;
-      width: 70%; }
-    #results div .btn {
-      border: none;
-      background: none;
-      margin: 0 auto;
-      margin-top: 7px;
-      -webkit-border-radius: 8;
-      -moz-border-radius: 8;
-      border-radius: 8px;
-      color: #ffffff;
-      background: #c8c8c8;
-      padding: 3px 8px 3px 8px;
-      text-decoration: none; }
-    #results div .btn:hover {
-      background: #525252;
-      text-decoration: none; }
+.arrDown a img {
+  width: 25px;
+  height: 25px;
+}
 
-.color1 {
-  background-color: #726258; }
-
-.color2 {
-  background-color: #a57c55; }
-
-.color3 {
-  background-color: #c7b29b; }
-
-.color4 {
-  background-color: #534741; }
-
-.color5 {
-  background-color: #252525; }
-
-#preview {
-  width: 100%;
+.content {
   height: 100%;
   display: flex;
+  flex-flow: row;
+}
+
+.phone {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0px;
+  right: 180px;
+  z-index: 0;
+  background-image: url(../../graphics/phone.png);
+  /* ../../graphics/phone.png */
+  background-size: 30%;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
-  margin-top: 170px; }
-  #preview .uiContainer {
-    width: 296px;
-    height: 392px;
+}
+
+.pjatk {
+  height: 30px;
+  width: 250px;
+  background-image: url(../../graphics/pjatk.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.aurasma {
+  height: 40px;
+  width: 80px;
+  background-image: url(../../graphics/aurasma.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.foto2 {
+  display: none;
+}
+
+.foto {
+  height: 220px;
+  background-image: url(../../graphics/fot.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+p2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  display: inline-block;
+  text-decoration: underline;
+  letter-spacing: 1px;
+}
+
+/* TECH */
+
+.tech {
+  height: 60px;
+  align-items: center;
+}
+
+.tech div {
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.ps {
+  width: 40px;
+  height: 40px;
+  background-image: url(../../graphics/tech/ps.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* .ps:hover, .ai:hover, .ae:hover, .id:hover, .html:hover, .css:hover, .js:hover {
+  width: 50px;
+  height: 50px;
+} */
+
+.ps:hover, .ai:hover, .ae:hover, .id:hover, .html:hover, .css:hover, .js:hover {
+  width: 50px;
+  height: 50px;
+}
+
+.sass:hover {
+  width: 70px;
+  height: 55px;
+}
+
+.bootstrap:hover {
+  width: 110px;
+  height: 55px;
+}
+
+.git:hover {
+  width: 80px;
+  height: 55px;
+}
+
+.ai {
+  width: 40px;
+  height: 40px;
+  background-image: url(../../graphics/tech/ai.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.ae {
+  width: 40px;
+  height: 40px;
+  background-image: url(../../graphics/tech/ae.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.id {
+  width: 40px;
+  height: 40px;
+  background-image: url(../../graphics/tech/id.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.html {
+  width: 40px;
+  height: 40px;
+  background-image: url(../../graphics/tech/html5.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.css {
+  width: 40px;
+  height: 40px;
+  background-image: url(../../graphics/tech/css3.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.js {
+  width: 40px;
+  height: 40px;
+  background-image: url(../../graphics/tech/js.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.sass {
+  width: 50px;
+  height: 40px;
+  background-image: url(../../graphics/tech/sass.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.bootstrap {
+  width: 90px;
+  height: 40px;
+  background-image: url(../../graphics/tech/bootstrap.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.git {
+  width: 60px;
+  height: 40px;
+  background-image: url(../../graphics/tech/git.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* BOOK */
+
+.book {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0px;
+  right: 180px;
+  z-index: 0;
+  background-image: url(../../graphics/book.png);
+  background-size: 40%;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+#app2 span {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  display: inline-block;
+  padding-top: 300px;
+  text-decoration: underline;
+  letter-spacing: 1px;
+}
+
+.download {
+  width: 350px;
+  height: 100px;
+  background-color: #1c202b;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.arrow {
+  width: 25px;
+  height: 25px;
+  background-image: url(../../graphics/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-left: 20px;
+}
+
+.download:hover p {
+  color: #38f070;
+}
+
+.download:hover .arrow {
+  background-image: url(../../graphics/arrowH.svg);
+}
+
+.download a {
+  display: block;
+  text-decoration: none;
+}
+
+.download a p {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.linkBox {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  margin: 0 10px 0 10px;
+
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.linkBox:first-child {
+  margin-left: 0;
+}
+
+.linkBox:last-child {
+  margin-right: 0;
+}
+
+.linkBox:hover {
+  background-color: #38f070;
+}
+
+.icon {
+  width: 90%;
+  height: 20px;
+  margin: 20px 0 25px 15px;
+}
+
+.linkBox span {
+  font-size: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.linkbox a {
+  width: 100%;
+  height: 100%;
+}
+
+.mail {
+  background-image: url(../../graphics/links/at.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.linkedin {
+  background-image: url(../../graphics/links/in.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.behance {
+  background-image: url(../../graphics/links/be.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.github {
+  background-image: url(../../graphics/links/gh.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+/* END */
+
+.end {
+  height: 100px;
+  background-color: #1c1f2b;
+}
+
+.end span {
+  color: white;
+  font-size: 12px;
+  display: inline-block;
+  padding-left: 0;
+}
+
+.marg {
+  margin-left: 50px;
+}
+
+.end div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.aboutMe p2 {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 110px;
+  padding-left: 15px;
+}
+
+.aboutMe span {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.right {
+  text-align: right;
+}
+
+.lPadding span {
+  padding-left: 0;
+}
+
+.rPadding span {
+  padding-right: 0;
+}
+
+@media only screen and (max-width: 991px) {
+  .arrDown  {
+    height: 75px;
+  }
+  .phone {
+    visibility: hidden;
+  }
+  .foto {
+    width: 120px;
+    height: 200px;
+  }
+  .aboutMe p2 {
+    margin-top: 85px;
+  }
+  .download {
+    margin-top: 50px;
+    height: 60px;
+    width: 220px;
+  }
+  .book {
+    right: 0px;
+    background-size: 50%;
+  }
+  .linkBox {
+    width: 80%;
+    height: 100px;
+    background-color: white;
+    margin: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .linkBox span {
+    display: none;
+  }
+  .icon {
+    margin: 0;
+    width: 80px;
+    background-position: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-nav > li > a {
+    line-height: 80px;/*changing this particular line does a lot, this is where the increase and decrease are done */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* height: 100% !important; */
+    /* overflow: visible !important */
+    font-size: 20px;
+  }
+  * {
+    font-size: 14px;
+  }
+  span {
+    font-size: 14px;
+  }
+  .aboutBook p1 {
+    font-size: 26px;
+  }
+  .aboutBook span {
+    font-size: 16px;
+  }
+  .safeSpace {
+    height: 60px;
+  }
+  .arrDown  {
+    height: 60px;
+  }
+  .marginBottom2 {
+    margin-bottom: 20px;
+  }
+  .lPadding span {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding: 0px 20px 0 20px;
+  }
+  .rPadding span {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding: 20px 20px 0 20px;
+  }
+  .phone {
+    visibility: hidden;
+  }
+  .foto {
+    display: none;
+  }
+  .foto2 {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url(../../graphics/fot.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding: 20px 20px 20px 20px;
+  }
+  #app1 .row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding: 20px 20px 20px 20px;
+  }
+  #app2 .row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding: 20px 20px 20px 20px;
+  }
+  #app3 .row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding: 20px 20px 20px 20px;
+  }
+  p2 {
+    font-size: 16px;
+  }
+  .aboutMe {
     display: flex;
     flex-flow: column;
-    justify-content: space-between; }
-  #preview .menu {
-    height: 32px; }
-  #preview .title {
-    height: 140px; }
-  #preview .text {
-    height: 80px; }
-  #preview .slider {
-    height: 140px; }
-  #preview .colorText {
-    background-color: grey; }
-  #preview .line {
-    height: 14px;
-    margin: 0 0 12px 31px; }
-    #preview .line:first-child {
-      margin-top: 36px; }
-  #preview .line1 {
-    width: 142px; }
-  #preview .line2 {
-    width: 183px; }
-  #preview .line3 {
-    width: 86px; }
-  #preview .textline {
-    height: 8px;
-    margin: 0 31px 6px 31px; }
-    #preview .textline:first-child {
-      margin-top: 20px; }
-  #preview .slider {
-    display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center; }
-    #preview .slider .sliderElem {
-      width: 73px;
-      height: 90px;
-      margin-right: 6px; }
-      #preview .slider .sliderElem:last-child {
-        margin-right: 0; }
+  }
+  .aboutMe p2 {
+    margin: 0 0 0 0;
+    margin-top: 20px;
+  }
+  .aboutMe span {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding: 20px 20px 0 20px;
+  }
+  .download {
+    margin-top: 50px;
+    height: 60px;
+    width: 220px;
+  }
+  .book {
+    display: none;
+  }
+  .linkBox {
+    width: 80%;
+    height: 100px;
+    background-color: white;
+    margin: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .linkBox span {
+    display: none;
+  }
+  .icon {
+    margin: 0;
+    width: 80px;
+    background-position: center;
+  }
+  .tech {
+    display: none;
+  }
+  .pjatk {
+    height: 20px;
+    width: 200px;
+    background-image: url(../../graphics/pjatk.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .aurasma {
+    height: 30px;
+    width: 50px;
+    background-image: url(../../graphics/aurasma.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .dl {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .empty {
+    display: none;
+  }
+  #app3 p2 {
+    margin: 20px 20px 20px 20px;
+  }
+  .links {
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .linkBox {
+    margin: 5px 20px 5px 20px;
+    height: 60px;
+    width: 100%;
+  }
+  .linkBox:first-child {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .linkBox:last-child {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .right {
+    margin-bottom: 20px;
+  }
+  .end div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .end span {
+    padding: 0 0 0 0;
+  }
+  .marg {
+    margin-left: 0px;
+  }
+  .bookMobile {
+    background-image: url(../../graphics/book.png);
+    height: 200px;
+    width: 90%;
+    background-repeat: no-repeat;
+    background-position: 200%;
+    background-size: contain;
+    margin-top: 60px;
+  }
+}

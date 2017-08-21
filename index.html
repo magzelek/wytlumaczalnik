@@ -2,11 +2,211 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Wytłumaczalnik</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="Stylesheet" type="text/css" href="stylesheet/css/style.css" />
 </head>
 <body>
-    <div id="app"></div>
-    <script src="js/out.js"></script>
+
+  <div class="container-fluid">
+
+    <!-- <nav id="menu" class="navbar navbar-toggleable-md navbar-fixed-top">
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav col-md-8 col-md-offset-2">
+          <li class="col-md-3 nav-item active"><a href="#app">O książce</a></li>
+          <li class="col-md-3 nav-item"><a href="#app1">O autorce</a></li>
+          <li class="col-md-3 nav-item"><a href="#app2">Pobierz PDF</a></li>
+          <li class="col-md-3 nav-item"><a href="#app3">Kontakt</a></li>
+        </ul>
+      </div>
+    </nav> -->
+
+    <nav id="menu" class="flexCenter navbar navbar-toggleable-md navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navTarget">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navTarget">
+            <ul class="navbar-nav col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+              <li class="col-md-3 col-sm-3 nav-item active"><a href="#app">O książce</a></li>
+              <li class="col-md-3 col-sm-3 nav-item"><a href="#app1">O autorce</a></li>
+              <li class="col-md-3 col-sm-3 nav-item"><a href="#app2">Pobierz PDF</a></li>
+              <li class="col-md-3 col-sm-3 nav-item"><a href="#app3">Kontakt</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <div id="app" class="row container-fluid screen col-md-12 col-sm-12 col-xs-12">
+      <div class="phone"></div>
+
+        <div class="row safeSpace col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12"></div>
+
+        <div class="row noMargin col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
+          <div class="col-md-7 col-sm-12 col-xs-12">
+
+            <div class="row noMargin marginBottom2 aboutBook col-md-12 col-sm-12 col-xs-12">
+              <p1>Wytłumaczalnik</p1>
+              <span>rozszerzona rzeczywistość z misją pomocy w nauce</span>
+            </div>
+
+            <div class="noMargin marginBottom2 col-md-12 col-sm-12 col-xs-12">
+              <div class="lPadding noMargin col-md-6 col-sm-6 col-xs-12">
+                <span>Książka Wytłumaczalnik powstała by przybliżyć młodzieży na etapie szkoły podstawowej niektóre interesujące prawa natury oraz umożliwić ich zobrazowanie już na etapie czytania, co skutkować ma ich lepszym zrozumieniem. Do korzystania z Wytłumaczalnika potrzebny jest smartfon lub tablet oraz dostęp do Internetu.</span>
+              </div>
+              <div class="rPadding noMargin col-md-6 col-sm-6 col-xs-12">
+                <span>Technologia rozszerzonej rzeczywistości wykorzystuje darmową aplikację Aurasma. Projekt jest wynikiem pracy nad dyplomem na studiach I-szego stopnia na Polsko-Japońskiej Akademii Technik Komputerowych w Warszawie.</span>
+              </div>
+            </div>
+
+            <div class="noMargin flexCenter row col-md-12 col-sm-12 col-xs-12">
+              <div class="pjatk"></div>
+              <div class="aurasma"></div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="arrDown col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
+          <a href="#app1"><img src="graphics/arrow_down.svg" /></a>
+        </div>
+
+    </div>
+
+    <div id="app1" class="row container-fluid screen col-md-12 col-sm-12 col-xs-12">
+
+      <div class="row safeSpace2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12"></div>
+
+
+      <div class="row col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+
+        <div class="row noMargin flexBetween col-md-12 col-sm-12 col-xs-12">
+
+          <div class="foto noMargin col-md-4 col-sm-4"></div>
+
+          <div class="aboutMe noMargin col-md-8 col-sm-8 col-xs-12">
+            <div class="foto2 noMargin col-xs-12"></div>
+            <p2>Cześć, jestem Magda Żelek.</p2>
+            <span>
+            Wytłumaczalnik jest moją pracą dyplomową na kierunku Sztuka Nowych Mediów na Polsko-Japońskiej Akademii Technik Komputerowych. Poza szkołą mam doświadczenie w pracy jako Graphic Designer i skończony kurs Front-Endowy w Coders Lab - szkole programowania.
+            </br></br>
+            Cel jaki przyświecał mi przy tworzeniu tej książki, to połączenie kilku gałęzi projektowania, a tym samym podkreślenie mojej wszechstronności i pokazanie jak wielu rzeczy nauczyłam się na studiach i samodzielnie rozwijając. Wykorzystałam web design, animację i technologię rozszerzonej rzeczywistości dostępną za darmo z poziomu smartfona czy tabletu.
+          </span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="row flexBetween tech col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+        <div class="ps"></div>
+        <div class="ai"></div>
+        <div class="ae"></div>
+        <div class="id"></div>
+        <div class="html"></div>
+        <div class="css"></div>
+        <div class="js"></div>
+        <div class="sass"></div>
+        <div class="bootstrap"></div>
+        <div class="git"></div>
+      </div>
+
+      <div class="arrDown col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
+        <a href="#app2"><img src="graphics/arrow_down.svg" /></a>
+      </div>
+
+    </div>
+
+    <div id="app2" class="row container-fluid screen col-md-12 col-sm-12 col-xs-12">
+
+      <div class="row safeSpace col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12"></div>
+
+      <div class="book"></div>
+
+      <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
+        <div class="dl col-md-6 col-sm-6 col-xs-12">
+          <p2>Pobierz PDFa "Wytłumaczalnik".</br>Zupełnie za darmo!</p2>
+          <div class="row noMargin download">
+            <a href="files/wytlumaczalnik.pdf" download>
+              <div><p>Pobierz</p></div>
+            </a>
+            <a href="files/wytlumaczalnik.pdf" download>
+              <div class="arrow"></div>
+            </a>
+          </div>
+          <div class="bookMobile"></div>
+        </div>
+        <div class="empty col-md-6 col-sm-6 col-xs-12"></div>
+      </div>
+
+      <div class="arrDown col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
+        <a href="#app3"><img src="graphics/arrow_down.svg" /></a>
+      </div>
+
+    </div>
+
+    <div id="app3" class="row container-fluid screen col-md-12 col-sm-6 col-xs-12">
+
+      <div class="row safeSpace2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12"></div>
+
+      <div class="row col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+
+        <div class="row noMargin marginBottom3 right col-md-12 col-sm-12 col-xs-12">
+          <p2>Podoba Ci się tu i jesteś zainteresowana/y współpracą?</br>Skontaktuj się ze mną!</p2>
+        </div>
+
+        <div class="row noMargin flexBetween links col-md-12 col-sm-12 col-xs-12">
+          <div class="linkBox col-md-3 col-sm-3 col-xs-12">
+            <a href="mailto:magdalenazelek92@gmail.com" target="_blank">
+              <div class="icon mail"></div>
+              <span>magdalenazelek92@gmail.com</span>
+            </a>
+          </div>
+          <div class="linkBox col-md-3 col-sm-3 col-xs-12">
+            <a href="http://www.linkedin.com/in/magdalenazelek" target="_blank">
+              <div class="icon linkedin"></div>
+              <span>linkedin.com/in/magdalenazelek</span>
+            </a>
+          </div>
+          <div class="linkBox col-md-3 col-sm-3 col-xs-12">
+            <a href="https://www.behance.net/magdalenazelek" target="_blank">
+              <div class="icon behance"></div>
+              <span>behance.net/magdalenazelek</span>
+            </a>
+          </div>
+          <div class="linkBox col-md-3 col-sm-3 col-xs-12">
+            <a href="http://www.github.com/magzelek" target="_blank">
+              <div class="icon github"></div>
+              <span>github.com/magzelek</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row noMargin end container-fluid col-md-12 col-sm-12 col-xs-12">
+        <div class="row col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+          <span>Projekt i wdrożenie: Magdalena Żelek</span>
+          <span class="marg">Copyright © 2017 Magdalena Żelek</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
