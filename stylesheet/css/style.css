@@ -323,6 +323,11 @@ p2 {
   align-items: center;
 }
 
+.techMobile {
+  display: none;
+}
+
+
 .tech div {
   -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -824,6 +829,14 @@ p2 {
   }
   .tech {
     display: none;
+  }
+  .techMobile {
+    display: block;
+    font-style: oblique;
+    margin-bottom: 25px;
+  }
+  .techMobile ul {
+    list-style: circle;
   }
   .dl {
     display: flex;
