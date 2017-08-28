@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Miriam Libre', sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   color: #1c202b;
 }
 
@@ -119,11 +119,11 @@
 }
 
 span {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
   color: black;
   display: inline-block;
-  text-align: justify;
+  /* text-align: justify; */
   line-height: 20px;
   padding: 0 15px 0 15px;
 }
@@ -220,6 +220,7 @@ span {
   padding-top: 0;
   padding-bottom: 0;
   margin: 0 auto;
+  font-size: 16px;
 }
 
 .navbar a {
@@ -307,11 +308,11 @@ span {
 }
 
 p2 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   color: white;
   display: inline-block;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   letter-spacing: 1px;
 }
 
@@ -632,12 +633,12 @@ p2 {
   padding-right: 0;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1024px) {
   .arrDown  {
     height: 75px;
   }
   .phone {
-    visibility: hidden;
+    display: none;
   }
   .foto {
     width: 120px;
@@ -686,20 +687,49 @@ p2 {
   * {
     font-size: 14px;
   }
+  .screen {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-content: space-between;
+    flex-flow:wrap;
+  }
   span {
     font-size: 14px;
   }
   .aboutBook p1 {
     font-size: 26px;
+    margin-top: 20px;
   }
   .aboutBook span {
     font-size: 16px;
+  }
+  .logos {
+    margin-bottom: 25px;
+    margin-top: 15px;
+    display: flex;
+    flex-flow: column;
+  }
+  .pjatk {
+    height: 30px;
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  .aurasma {
+    height: 40px;
+    width: 100px;
+  }
+  .aboutMe {
+    margin-top: 15px;
+    margin-bottom: 25px;
   }
   .safeSpace {
     height: 60px;
   }
   .arrDown  {
-    height: 60px;
+    display: none;
+    /* height: 60px;
+    align-items: baseline; */
   }
   .marginBottom2 {
     margin-bottom: 20px;
@@ -795,22 +825,6 @@ p2 {
   .tech {
     display: none;
   }
-  .pjatk {
-    height: 20px;
-    width: 200px;
-    background-image: url(../../graphics/pjatk.svg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .aurasma {
-    height: 30px;
-    width: 50px;
-    background-image: url(../../graphics/aurasma.svg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
   .dl {
     display: flex;
     flex-flow: column;
@@ -827,6 +841,7 @@ p2 {
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 35px;
   }
   .linkBox {
     margin: 5px 20px 5px 20px;
@@ -857,12 +872,13 @@ p2 {
     margin-left: 0px;
   }
   .bookMobile {
-    background-image: url(../../graphics/book.png);
+    background-image: url(../../graphics/book2.png);
     height: 200px;
     width: 90%;
     background-repeat: no-repeat;
-    background-position: 200%;
+    background-position: center;
     background-size: contain;
-    margin-top: 60px;
+    margin-top: 40px;
+    margin-bottom: 25px;
   }
 }
